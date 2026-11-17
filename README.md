@@ -1,6 +1,8 @@
 # payments-idempotency-assessment-task
 This is a software engineering task as an assessment. Create a long-horizon task: the prompt you would give a model, and how you would check its work. It can build on any existing repository, framework, or language you know well. Backend, DevOps, and infrastructure only; no frontend or UI.
 
+The primary engineering requirement is to implement idempotency for POST /payments, ensuring that retrying a request with the same Idempotency-Key does not charge the customer twice.
+
 Required Packages:
 
     1) pip install sqlalchemy
